@@ -1,0 +1,133 @@
+$font-stack: "Poppins", serif;
+$dark-color: #111;
+$light-color: #fff;
+$bg-color: #454c77;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-stack;
+  line-height: 1.8;
+  height: 100vh;
+  color: $dark-color;
+}
+
+.navbar {
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  border-bottom: 1px solid $dark-color;
+  align-items: center;
+  position: fixed;
+  height: 60px;
+  background-color: $bg-color;
+  width: 100%;
+  color: #fff;
+  box-shadow: 5px 5px 5px rgba(69, 76, 119, 0.7);
+  ul {
+    display: flex;
+
+    li {
+      margin-left: 1rem;
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        transition: ease-in 0.2s;
+
+        &:hover {
+          color: rgb(146, 184, 235);
+        }
+      }
+    }
+  }
+}
+
+#history,
+#type {
+  position: relative;
+  top: 70px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  #debut {
+    img {
+      max-height: 276px;
+    }
+  }
+
+  #america,
+  #women {
+    img {
+      max-height: 350px;
+    }
+  }
+
+  #democratisation {
+    img {
+      max-height: 320px;
+    }
+  }
+
+  #now {
+    img {
+      max-height: 300px;
+    }
+  }
+
+  .card {
+    padding-top: 10px;
+  }
+
+  .images {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+
+    img {
+      position: relative;
+      max-width: 500px;
+      max-height: 400px;
+      padding: 20px;
+    }
+  }
+
+  footer {
+    padding-bottom: 30px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.line {
+  border: 0.01px solid $dark-color;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  .images {
+    flex-direction: column;
+    align-items: center;
+  }
+}
