@@ -12,6 +12,7 @@ body {
   text-align: justify;
 }
 .navbar {
+  color:#fff;
   z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
