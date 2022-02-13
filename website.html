@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/labibledugrimpeur/css/main.css" />
+    <link rel="stylesheet" href="\css/main.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link
@@ -16,10 +16,27 @@
   <body>
     <!-- Navbar -->
     <nav class="navbar">
-      <h1><a href="index.html">La Bible du Grimpeur</a></h1>
+      <h1><a href="index.html"> La Bible du Grimpeur</a></h1>
       <ul>
-        <li><a href="#histoire">Histoire du Sport</a></li>
-        <li><a href="#types">Types de Grimpe</a></li>
+        <div class="dropdown">
+          <li class="dropbtn"><a href="#histoire">Histoire du Sport</a></li>
+          <div class="dropdown-content">
+            <a href="#debut">Les débuts européens</a>
+            <a href="#america">L'engouement américain</a>
+            <a href="#democratisation">Démocratisation du sport</a>
+            <a href="#women">Les femmes et le bloc</a>
+            <a href="#now">La nouvelle génération</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <li class="dropbtn"><a href="#types">Types de Grimpe</a></li>
+          <div class="dropdown-content">
+            <a href="#lead">La tête</a>
+            <a href="#bouldering">Le bloc</a>
+            <a href="#speed">La vitesse</a>
+            <a href="#free-solo">Le free solo</a>
+          </div>
+        </div>
       </ul>
     </nav>
     <!-- Histoire de l'escalade -->
@@ -213,7 +230,7 @@
         </div>
       </div>
       <div class="card" data-aos="fade-up">
-        <div class="bouldering">
+        <div id="bouldering">
           <h2>Le Bloc</h2>
           <div>
             <p>
@@ -251,7 +268,7 @@
         </div>
       </div>
       <div class="card" data-aos="fade-up">
-        <div class="speed">
+        <div id="speed">
           <h2>La Vitesse</h2>
           <div>
             <p>
@@ -280,7 +297,7 @@
         </div>
       </div>
       <div class="card" data-aos="fade-up">
-        <div class="free-solo">
+        <div id="free-solo">
           <h2>Le Free Solo</h2>
           <div>
             <p>
