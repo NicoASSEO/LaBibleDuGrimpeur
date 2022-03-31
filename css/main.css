@@ -40,6 +40,8 @@ body {
   line-height: 1.8;
   height: 100vh;
   color: #111;
+  scroll-behavior: smooth;
+
 }
 .navbar {
   z-index: 100;
